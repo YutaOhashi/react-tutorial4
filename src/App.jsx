@@ -72,10 +72,7 @@ export default function App() {
                 <main>
                     {filteredProducts.map((product) => (
                         <section className={product.type} key={product.name}>
-                            <h2>
-                                {product.name}
-                                <img src={`/icons/${product.icon}`} alt={`${product.name} icon`} style={{ height: '30px', marginLeft: '10px' }} />
-                            </h2>
+                            <h2>{product.name}</h2>
                             <p>${product.price.toFixed(2)}</p>
                             <img src={`images/${product.image}`} alt={product.name} />
                         </section>
