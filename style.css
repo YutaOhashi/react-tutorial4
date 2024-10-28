@@ -5,6 +5,12 @@ html {
     background-color: yellow;
     font-size: 10px;
 }
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
 body {
     width: 800px;

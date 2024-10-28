@@ -36,7 +36,11 @@ export default function App() {
     return (
         <>
             <header>
+            <div className="header-container">
+                <img src="icons/bean_icon.png" alt="Bean Icon" className="header-icon" />
                 <h1>The Can Store</h1>
+                <img src="icons/bean_icon.png" alt="Bean Icon" className="header-icon" />
+            </div>
             </header>
             <div>
                 <aside>
@@ -72,6 +76,7 @@ export default function App() {
                 <main>
                     {filteredProducts.map((product) => (
                         <section className={product.type} key={product.name}>
+                            <img src={`icons/${product.icon}`} alt={product.name} style={{ width: '50px', position: 'absolute', top: '10px', left: '10px' }} />
                             <h2>{product.name}</h2>
                             <p>${product.price.toFixed(2)}</p>
                             <img src={`images/${product.image}`} alt={product.name} />
