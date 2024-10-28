@@ -14,13 +14,6 @@
       "icon": "icons/meat-icon.png"
     },
     {
-        "name" : "Refried beans",
-        "price" : 0.99,
-        "image" : "refried.jpg",
-        "type" : "vegetables",
-        "icon": "icons/bean-icon.png"
-    },
-    {
       "name" : "Spam",
       "price" : 2.85,
       "image" : "spam.jpg",
@@ -28,25 +21,18 @@
       "icon": "icons/meat-icon.png"
     },
     {
-      "name" : "Kidney beans",
-      "price" : 0.58,
-      "image" : "kidney.jpg",
-      "type" : "vegetables",
+        "name" : "Refried beans",
+        "price" : 0.99,
+        "image" : "refried.jpg",
+        "type" : "vegetables",
         "icon": "icons/bean-icon.png"
     },
     {
-      "name" : "Mushy peas",
-      "price" : 0.58,
-      "image" : "mushypeas.jpg",
-      "type" : "vegetables",
+        "name" : "Kidney beans",
+        "price" : 0.58,
+        "image" : "kidney.jpg",
+        "type" : "vegetables",
         "icon": "icons/bean-icon.png"
-    },
-    {
-      "name" : "Corned beef",
-      "price" : 2.39,
-      "image" : "cornedbeef.jpg",
-      "type" : "meat",
-      "icon": "icons/meat-icon.png"
     },
     {
         "name" : "Garden peas",
@@ -56,16 +42,23 @@
         "icon": "icons/bean-icon.png"
     },
     {
+        "name" : "Mushy peas",
+        "price" : 0.58,
+        "image" : "mushypeas.jpg",
+        "type" : "vegetables",
+        "icon": "icons/bean-icon.png"
+    },
+    {
+        "name" : "Corned beef",
+        "price" : 2.39,
+        "image" : "cornedbeef.jpg",
+        "type" : "meat",
+        "icon": "icons/meat-icon.png"
+    },
+    {
       "name" : "Tomato soup",
       "price" : 1.40,
       "image" : "tomatosoup.jpg",
-      "type" : "soup",
-      "icon": "icons/soup-icon.png" 
-    },
-    {
-      "name" : "Chicken noodle soup",
-      "price" : 1.89,
-      "image" : "chickennoodle.jpg",
       "type" : "soup",
       "icon": "icons/soup-icon.png" 
     },
@@ -77,10 +70,17 @@
         "icon": "icons/bean-icon.png"
     },
     {
-      "name" : "Carrot and coriander soup",
-      "price" : 1.49,
-      "image" : "carrotcoriander.jpg",
-      "type" : "soup",
-      "icon": "icons/soup-icon.png" 
+        "name" : "Chicken noodle soup",
+        "price" : 1.89,
+        "image" : "chickennoodle.jpg",
+        "type" : "soup",
+        "icon": "icons/soup-icon.png" 
+    },
+    {
+        "name" : "Carrot and coriander soup",
+        "price" : 1.49,
+        "image" : "carrotcoriander.jpg",
+        "type" : "soup",
+        "icon": "icons/soup-icon.png" 
     }
 ]
