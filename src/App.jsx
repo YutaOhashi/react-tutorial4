@@ -8,30 +8,30 @@ export default function App() {
 
     useEffect(() => {
         const fetchProducts = async () => {
-        const response = await fetch("/products.json");
-        const data = await response.json();
-        setProducts(data);
-        setFilteredProducts(data);
-    };
+            const response = await fetch("/products.json");
+            const data = await response.json();
+            setProducts(data);
+            setFilteredProducts(data);
+        };
 
-    fetchProducts();
+        fetchProducts();
     }, []);
 
-    useEffect(() => {
+    const filterProducts = () => {
         let updatedProducts = products;
 
         if (category !== "All") {
             updatedProducts = updatedProducts.filter(product => 
-            product.type === category.toLowerCase());
+                product.type === category.toLowerCase());
         }
 
         if (searchTerm) {
             updatedProducts = updatedProducts.filter(product =>
-            product.name.toLowerCase().includes(searchTerm.toLowerCase()));
+                product.name.toLowerCase().includes(searchTerm.toLowerCase()));
         }
 
         setFilteredProducts(updatedProducts);
-    }, [category, searchTerm, products]);
+    };
 
     return (
         <>
@@ -40,7 +40,7 @@ export default function App() {
             </header>
             <div>
                 <aside>
-                    <form>
+                    <form onSubmit={(e) => e.preventDefault()}>
                         <div>
                             <label htmlFor="category">Choose a category:</label>
                             <select
@@ -48,10 +48,10 @@ export default function App() {
                                 value={category}
                                 onChange={(e) => setCategory(e.target.value)}
                             >
-                            <option>All</option>
-                            <option>Vegetables</option>
-                            <option>Meat</option>
-                            <option>Soup</option>
+                                <option>All</option>
+                                <option>Vegetables</option>
+                                <option>Meat</option>
+                                <option>Soup</option>
                             </select>
                         </div>
                         <div>
@@ -65,7 +65,7 @@ export default function App() {
                             />
                         </div>
                         <div>
-                            <button type="button">Filter results</button>
+                            <button type="button" onClick={filterProducts}>Filter results</button>
                         </div>
                     </form>
                 </aside>
@@ -81,7 +81,7 @@ export default function App() {
                 </main>
             </div>
             <footer>
-            <p>All icons found at the Noun Project:</p>
+                <p>All icons found at the Noun Project:</p>
                 <ul>
                     <li>
                         Bean can icon by{" "}
